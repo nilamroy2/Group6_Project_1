@@ -7,7 +7,7 @@ Healthcare is one of the top issues up for debate in the 2020 presidential elect
 -Describe the questions you asked, and why you asked them
 -Describe whether you were able to answer these questions to your satisfaction, and briefly summarize your findings
 
-#### Questions & Data
+### Questions & Data
 We wanted to analyze the current landscape of Medicare in the United States and answer the following questions:
 
 * How have the hospital charges for services for Medicare beneficiaries changed over time?
@@ -23,7 +23,7 @@ CMS is a part of the Dept of Health and Human Services.
 Flat files were gathered from https://www.cms.gov/research-statistics-data-and-systems/statistics-trends-and-reports/medicare-provider-charge-data/inpatient.html
 
 
-#### Data Cleanup & Exploration
+### Data Cleanup & Exploration
 
 * From cms.gov we found several flat files with Medicare provider information from 2011-2016
 
@@ -51,14 +51,10 @@ state_df[" Total Discharges "] = pd.to_numeric(state_df[" Total Discharges "])
 #state_df.head()
 ```
 
-Data Analysis
+### Data Analysis
 
-Discuss the steps you took to analyze the data and answer each question you asked in your proposal
-Present and discuss interesting figures developed during analysis, ideally with the help of Jupyter Notebook
-Discussion
 
-Discuss your findings. Did you find what you expected to find? If not, why not? What inferences or general conclusions can you draw from your analysis?
-Post Mortem
 
-Discuss any difficulties that arose, and how you dealt with them
-Discuss any additional questions that came up, but which you didn't have time to answer: What would you research next, if you had two more weeks?
+### Barriers and other questions
+
+### Final Observations
