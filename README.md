@@ -52,9 +52,78 @@ state_df[" Total Discharges "] = pd.to_numeric(state_df[" Total Discharges "])
 ```
 
 ### Data Analysis
+##### How have Medicare provider charges changed overtime?
+When comparing all available diagnosis, we see that California, Florida, Texas, New York and Pennsylvania charge the most for Medicare covered services. 
+
+However, this trend seems to  correlate with states that have higher populations
+<insert image 1>
+
+When viewing average charges per provider, versus the whole state we see some variation in which states are charging Medicare beneficiaries more.
+<insert image 2>
+In both charts we see a slight increase in charges from 2014 - 2016
+
+#### Is there a difference in what each state charges Medicare beneficiaries to treat the same diagnosis?
+<insert image 3>
+
+When comparing 5 diagnosis and 5 select states we see the following trend:
+Providers in California, Florida and Texas charge similar rates for heart and renal failure related diagnosis
+
+Overall, states are charging different rates to treat the same diagnosis
+
+Medicare Provider Charges in Texas
+<insert image 4>
+We found that not only do provider charges vary across states, but there are also differences in charges for the same diagnosis within the same state
+While there is some regulation, each individual provider/hospital chooses what they want to charge patients. 
+
+<insert image 5>
+In Texas, Methodist, Houston Methodist and Baylor Medical Center  are able to treat the most diagnosis for Medicare beneficiaries
+
+#### How much is not getting covered by Medicare?
+After Medicare makes a payment to the provider, how much is left to be covered by the patient or other entities?
+
+For select diagnosis, we can determine that Alaska offers fair Medicare plans to its residents, since only 10% of the total payment remains after Medicare pays its part. 
+<insert image 6>
+
+When comparing the same 5 states and diagnosis as previously mentioned, we observed the following:
+* There would still be more than 40% of the total balance remaining after Medicare pays its part in both Florida and North Dakota.
+* On a previous graph we saw that Vermont had one of the higher overall Medicare service charges, but conversely, Medicare plans in this state would cover ~80% of the cost.
+<insert image 7>
+
+#### What diagnosis is being treated the most among Medicare beneficiaries?
+<insert image 8>
+Diagnosis of sepsis, joint replacement and heart failure are most common among patients using Medicare as a payer. 
+Less common diagnosis included multiple labor and delivery diagnosis. 
+Considering that eligible Medicare recipients include older adults (65+) and disabled individuals these observations were expected.
+
+Less expected was the difference in what Medicare would cover for the same diagnosis across different states.
+It is clear that more populated states have a higher number of Medicare discharges, but we also see that the Medicare plans in some of these same states cover just a small fraction of the total charges
+While Florida historically has one the higher retirement populations and hence higher Medicare beneficiary discharges, we see that Massachusetts is a leader when it come to health care reform
+<insert image 9>
 
 
+### Barriers 
+Data for years 2011-2013 had significantly less diagnosis information than 2014-2016. 
+* To address this we focused on the datasets for 2014 – 2016 and some charts focus on specific diagnosis that we know are treated throughout all 50 states. 
+Our team was unknowingly referencing different data sources
+* The site where we pulled our data from had multiple links with very similar, yet different! files. We later discovered that we were all not using the same data and had to go back and make corrections. 
+Formatting the dataset
+* Significant time was spent formatting columns into floats and finding single errors to correct. Some of the csv files had inconsistent formatting while other did not.
+* For example, discovering that one column name was formatted differently that the others. The “Total Discharges” column was formatted with a space at the beginning and end. Attempting to call this column without discovering this just resulted in errors
+### Other Questions
 
-### Barriers and other questions
+What amount are the patients responsible for paying?
+* The data provided information about how much Medicare would pay, what the provider was charging and what the total payment was, but we would need more information to say exactly how much the patient was responsible for
+What are states like Massachusetts doing differently than the others?
+* When considering the top discharged diagnosis, Massachusetts was an outlier in how much Medicare would cover for this service. In MA Medicare would cover more than 45% of the cost for treatment of severe sepsis. The next highest state covering less than 35%
+How do public, private and faith-based hospitals compare in cost?
+* It is clear that the cost of Medicare services will vary depending on the provider, but are there any trends in the type of hospital that is offering the service?
+
+If we had more time, perhaps we could examine data by smaller regions rather than states (zip codes) and draw on other CSVs or APIs to determine factors about those zip codes and find correlations with charges from hospital providers for Medicare patients.
 
 ### Final Observations
+
+Even though Medicare is managed on a Federal level, coverage varies significantly depending on both the state and the provider/hospital themselves. 
+On average, 15 – 20% of the total payment still remains after Medicare submits its payment to the provider. The patient will be responsible for an unknown portion of this. 
+The most common diagnosis among Medicare beneficiaries are related to sepsis (infection), joint replacement, heart failure and renal failure. 
+The cost of Medicare has certainly increased over the years along with other types of health insurance, but more data would be needed to explicitly say by how much.
+Lastly…healthcare in the US has room for improvement! 
