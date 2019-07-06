@@ -56,10 +56,13 @@ state_df[" Total Discharges "] = pd.to_numeric(state_df[" Total Discharges "])
 When comparing all available diagnosis, we see that California, Florida, Texas, New York and Pennsylvania charge the most for Medicare covered services. 
 
 However, this trend seems to  correlate with states that have higher populations
+
 ![image](https://user-images.githubusercontent.com/49836101/60748780-16807800-9f57-11e9-962e-9eec3dd949c0.png)
 
 When viewing average charges per provider, versus the whole state we see some variation in which states are charging Medicare beneficiaries more.
+
 ![image](https://user-images.githubusercontent.com/49836101/60748796-36b03700-9f57-11e9-9547-505bd04253a1.png)
+
 In both charts we see a slight increase in charges from 2014 - 2016
 
 #### Is there a difference in what each state charges Medicare beneficiaries to treat the same diagnosis?
@@ -71,26 +74,33 @@ Providers in California, Florida and Texas charge similar rates for heart and re
 Overall, states are charging different rates to treat the same diagnosis
 
 Medicare Provider Charges in Texas
+
 ![image](https://user-images.githubusercontent.com/49836101/60748619-5cd4d780-9f55-11e9-8b78-0d3fe84d256b.png)
+
 We found that not only do provider charges vary across states, but there are also differences in charges for the same diagnosis within the same state
 While there is some regulation, each individual provider/hospital chooses what they want to charge patients. 
 
 ![image](https://user-images.githubusercontent.com/49836101/60748622-62322200-9f55-11e9-82e8-137c66321da2.png)
+
 In Texas, Methodist, Houston Methodist and Baylor Medical Center  are able to treat the most diagnosis for Medicare beneficiaries
 
 #### How much is not getting covered by Medicare?
 After Medicare makes a payment to the provider, how much is left to be covered by the patient or other entities?
 
 For select diagnosis, we can determine that Alaska offers fair Medicare plans to its residents, since only 10% of the total payment remains after Medicare pays its part. 
+
 ![image](https://user-images.githubusercontent.com/49836101/60748626-665e3f80-9f55-11e9-856c-88110a6d1acc.png)
 
 When comparing the same 5 states and diagnosis as previously mentioned, we observed the following:
 * There would still be more than 40% of the total balance remaining after Medicare pays its part in both Florida and North Dakota.
 * On a previous graph we saw that Vermont had one of the higher overall Medicare service charges, but conversely, Medicare plans in this state would cover ~80% of the cost.
+
 ![image](https://user-images.githubusercontent.com/49836101/60748630-6a8a5d00-9f55-11e9-95d5-80f0bf94ac33.png)
 
 #### What diagnosis is being treated the most among Medicare beneficiaries?
+
 ![image](https://user-images.githubusercontent.com/49836101/60748632-6e1de400-9f55-11e9-9379-5de30847a720.png)
+
 Diagnosis of sepsis, joint replacement and heart failure are most common among patients using Medicare as a payer. 
 Less common diagnosis included multiple labor and delivery diagnosis. 
 Considering that eligible Medicare recipients include older adults (65+) and disabled individuals these observations were expected.
@@ -98,6 +108,7 @@ Considering that eligible Medicare recipients include older adults (65+) and dis
 Less expected was the difference in what Medicare would cover for the same diagnosis across different states.
 It is clear that more populated states have a higher number of Medicare discharges, but we also see that the Medicare plans in some of these same states cover just a small fraction of the total charges
 While Florida historically has one the higher retirement populations and hence higher Medicare beneficiary discharges, we see that Massachusetts is a leader when it come to health care reform
+
 ![image](https://user-images.githubusercontent.com/49836101/60748635-724a0180-9f55-11e9-9ce0-27c868905cb0.png)
 
 
@@ -109,6 +120,7 @@ Our team was unknowingly referencing different data sources
 Formatting the dataset
 * Significant time was spent formatting columns into floats and finding single errors to correct. Some of the csv files had inconsistent formatting while other did not.
 * For example, discovering that one column name was formatted differently that the others. The “Total Discharges” column was formatted with a space at the beginning and end. Attempting to call this column without discovering this just resulted in errors
+
 ### Other Questions
 
 What amount are the patients responsible for paying?
