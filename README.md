@@ -90,13 +90,13 @@ Providers in California, Florida and Texas charge similar rates for heart and re
 
 * For select diagnosis, we can determine that Alaska offers fair Medicare plans to its residents, since only 10% of the total payment remains after Medicare pays its part. 
 
-![image](https://user-images.githubusercontent.com/49836101/60748626-665e3f80-9f55-11e9-856c-88110a6d1acc.png)
+![image](https://user-images.githubusercontent.com/49836101/60748959-d91cea00-9f58-11e9-9887-2f4fda29e811.png)
 
 **When comparing the same 5 states and diagnosis as previously mentioned, we observed the following:**
 * There would still be more than 40% of the total balance remaining after Medicare pays its part in both Florida and North Dakota.
 * On a previous graph we saw that Vermont had one of the higher overall Medicare service charges, but conversely, Medicare plans in this state would cover ~80% of the cost.
 
-![image](https://user-images.githubusercontent.com/49836101/60748630-6a8a5d00-9f55-11e9-95d5-80f0bf94ac33.png)
+![image](https://user-images.githubusercontent.com/49836101/60748947-b5f23a80-9f58-11e9-9976-55530ed4fb5e.png)
 
 #### What diagnosis is being treated the most among Medicare beneficiaries?
 
