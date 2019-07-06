@@ -7,7 +7,7 @@ Healthcare is one of the top issues up for debate in the 2020 presidential elect
 -Describe the questions you asked, and why you asked them
 -Describe whether you were able to answer these questions to your satisfaction, and briefly summarize your findings
 
-### Questions & Data
+## Questions & Data
 We wanted to analyze the current landscape of Medicare in the United States and answer the following questions:
 
 * How have the hospital charges for services for Medicare beneficiaries changed over time?
@@ -23,7 +23,7 @@ CMS is a part of the Dept of Health and Human Services.
 Flat files were gathered from https://www.cms.gov/research-statistics-data-and-systems/statistics-trends-and-reports/medicare-provider-charge-data/inpatient.html
 
 
-### Data Cleanup & Exploration
+## Data Cleanup & Exploration
 
 * From cms.gov we found several flat files with Medicare provider information from 2011-2016
 
@@ -51,7 +51,7 @@ state_df[" Total Discharges "] = pd.to_numeric(state_df[" Total Discharges "])
 #state_df.head()
 ```
 
-### Data Analysis
+## Data Analysis
 ##### How have Medicare provider charges changed overtime?
 * When comparing all available diagnosis, we see that California, Florida, Texas, New York and Pennsylvania charge the most for Medicare covered services. 
 
@@ -115,7 +115,7 @@ Providers in California, Florida and Texas charge similar rates for heart and re
 ![image](https://user-images.githubusercontent.com/49836101/60748635-724a0180-9f55-11e9-9ce0-27c868905cb0.png)
 
 
-### Barriers 
+## Barriers 
 __Data for years 2011-2013 had significantly less diagnosis information than 2014-2016.__
 * To address this we focused on the datasets for 2014 – 2016 and some charts focus on specific diagnosis that we know are treated throughout all 50 states. 
 __Our team was unknowingly referencing different data sources__
@@ -124,7 +124,7 @@ __Formatting the dataset__
 * Significant time was spent formatting columns into floats and finding single errors to correct. Some of the csv files had inconsistent formatting while other did not.
 * For example, discovering that one column name was formatted differently that the others. The “Total Discharges” column was formatted with a space at the beginning and end. Attempting to call this column without discovering this just resulted in errors
 
-### Other Questions
+## Other Questions
 
 __What amount are the patients responsible for paying?__
 * The data provided information about how much Medicare would pay, what the provider was charging and what the total payment was, but we would need more information to say exactly how much the patient was responsible for
@@ -135,7 +135,7 @@ __How do public, private and faith-based hospitals compare in cost?__
 
 * If we had more time, perhaps we could examine data by smaller regions rather than states (zip codes) and draw on other CSVs or APIs to determine factors about those zip codes and find correlations with charges from hospital providers for Medicare patients.
 
-### Final Observations
+## Final Observations
 
 * Even though Medicare is managed on a Federal level, coverage varies significantly depending on both the state and the provider/hospital themselves. 
 
