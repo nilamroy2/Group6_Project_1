@@ -56,10 +56,10 @@ state_df[" Total Discharges "] = pd.to_numeric(state_df[" Total Discharges "])
 When comparing all available diagnosis, we see that California, Florida, Texas, New York and Pennsylvania charge the most for Medicare covered services. 
 
 However, this trend seems to  correlate with states that have higher populations
-![image](https://user-images.githubusercontent.com/49836101/60748614-50507f00-9f55-11e9-8749-f106db1496cb.png)
+![image](https://user-images.githubusercontent.com/49836101/60748780-16807800-9f57-11e9-962e-9eec3dd949c0.png)
 
 When viewing average charges per provider, versus the whole state we see some variation in which states are charging Medicare beneficiaries more.
-![image](https://user-images.githubusercontent.com/49836101/60748615-53e40600-9f55-11e9-9342-0543c577a379.png)
+![image](https://user-images.githubusercontent.com/49836101/60748796-36b03700-9f57-11e9-9547-505bd04253a1.png)
 In both charts we see a slight increase in charges from 2014 - 2016
 
 #### Is there a difference in what each state charges Medicare beneficiaries to treat the same diagnosis?
